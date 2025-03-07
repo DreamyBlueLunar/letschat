@@ -1,7 +1,7 @@
 #include <muduo/net/EventLoop.h>
 #include <muduo/net/TcpServer.h>
 
-#include "../../include/server/chat_server.hpp"
+#include "chat_server.hpp"
 
 int main(void) {
   muduo::net::EventLoop loop;
