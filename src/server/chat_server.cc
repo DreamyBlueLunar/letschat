@@ -1,10 +1,10 @@
-#include "../../include/server/chat_server.hpp"
+#include "chat_server.hpp"
 
 #include <muduo/base/Logging.h>
 
 #include <functional>
 
-#include "../../include/server/chat_service.hpp"
+#include "chat_service.hpp"
 
 chat_server::chat_server(muduo::net::EventLoop *loop,
                          const muduo::net::InetAddress &addr,

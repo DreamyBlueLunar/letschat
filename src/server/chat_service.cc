@@ -1,10 +1,10 @@
-#include "../../include/server/chat_service.hpp"
+#include "chat_service.hpp"
 
 #include <muduo/base/Logging.h>
 
 #include <functional>
 
-#include "../../include/public.hpp"
+#include "public.hpp"
 
 // 单例模式
 chat_service* chat_service::instance() {
