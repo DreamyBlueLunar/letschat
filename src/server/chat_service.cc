@@ -23,6 +23,8 @@ chat_service::chat_service() {
                  std::placeholders::_2, std::placeholders::_3)});
 }
 
+chat_service::~chat_service() {}
+
 msg_handler chat_service::get_handler(int msg_id) {
   auto it = msg_handler_map_.find(msg_id);
   if (it == msg_handler_map_.end()) {

@@ -28,6 +28,13 @@ class chat_service {
 
  private:
   chat_service();
+  ~chat_service();
+
+  chat_service(const chat_service& other) = delete;
+  chat_service(chat_service&& other) = delete;
+  chat_service& operator=(const chat_service& other) = delete;
+  chat_service& operator=(chat_service&& other) = delete;
+
   // 一个消息类型和消息处理器的映射表
   std::unordered_map<int, msg_handler> msg_handler_map_;
 };
