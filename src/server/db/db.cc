@@ -1,4 +1,4 @@
-#include "db.h"
+#include "db.hpp"
 
 static std::string host = "127.0.0.1";
 static short port = 3306;
